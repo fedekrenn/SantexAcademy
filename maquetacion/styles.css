@@ -1,40 +1,209 @@
-
-
-
-html {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
 }
 
-p {
-    margin-right: 2em;
-    font-weight: bold;
-    font-size: 0.9em;
-    font-weight: 500;
+body {
+  margin: 0;
+  font-family: inter, sans-serif;
 }
 
-button {
-    background-color: white;
-    border-radius: 30px;
-    padding: 0px 1.5em;
-    height: 2.5em;
-    border: 2px solid black;
-    font-size: 0.8em;
-    width: 8em;
+li {
+  list-style: none;
+  margin: 5px;
 }
 
-div#navbar-left img {
-    width: 8em;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-@media (width >= 2500px) {
-    html {
-        font-size: 28px;
-    }
+img {
+  max-width: 100%;
 }
 
-@media (width >= 3500px) {
-    html {
-        font-size: 32px;
-    }
+h1 {
+  margin: 0px 400px;
+  text-align: center;
+}
+
+#header {
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 1px solid gray;
+  display: flex;
+  padding: 10px 100px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+ul li img {
+  width: 17px;
+  height: 17px;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#introduction-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+h1 {
+  width: 50%;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 40px auto;
+}
+
+a.btn {
+  background-color: white;
+  border: 2px solid black;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 25px;
+  padding: 9px 20px;
+  line-height: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+a.btn:hover {
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}
+
+a.violet {
+  border-color: #6b53f0;
+  color: #6b53f0;
+}
+
+a.violet:hover {
+  background-color: #6b53f0;
+  color: #fff;
+}
+
+.presentation {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.impact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55vh;
+  background-color: #201b24;
+  color: #fff;
+}
+
+.impact__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.impact__container div {
+  width: 48%;
+}
+
+.impact__container h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.impact__container p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.impact__numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.impact__numbers span {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.impact__numbers p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #8c939c;
+}
+
+span.purple-text {
+  color: #6b53f0;
+  font-size: 30px;
+  font-weight: 400;
+  vertical-align: top;
+}
+
+.impact__image {
+  background-image: url("./assets/santex-team.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "programs-training__img programs-training__text"
+    "programs-training__text2 programs-training__img2";
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.programs-training__img {
+  grid-area: programs-training__img;
+}
+
+.programs-training__text {
+  grid-area: programs-training__text;
+}
+
+.programs-training__img2 {
+  grid-area: programs-training__img2;
+}
+
+.programs-training__text2 {
+  grid-area: programs-training__text2;
+}
+
+@media (max-width: 1034px) {
+  #header {
+    padding: 10px 20px;
+  }
 }
