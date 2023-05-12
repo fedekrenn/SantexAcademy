@@ -172,11 +172,28 @@ span.purple-text {
   background-attachment: fixed;
 }
 
+.programs-training h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 60px 0 0 60px;
+}
+
+.training > div,
+.programs > div {
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
+  gap: 3em;
   grid-auto-flow: row;
   grid-template-areas:
     "programs-training__img programs-training__text"
@@ -184,6 +201,15 @@ span.purple-text {
   align-items: center;
   justify-content: center;
   justify-items: center;
+  padding: 2em 4em;
+}
+
+.rounded-left {
+  border-radius: 0 40px 40px 40px;
+}
+
+.rounded-right {
+  border-radius: 40px 40px 0 40px;
 }
 
 .programs-training__img {
@@ -200,6 +226,27 @@ span.purple-text {
 
 .programs-training__text2 {
   grid-area: programs-training__text2;
+}
+
+.xAcademy-logo {
+  width: 200px;
+}
+
+.programs-training__text, .programs-training__text2 {
+  width: 80%;
+}
+
+.programs-training h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0;
+}
+
+.programs-training p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 @media (max-width: 1034px) {
