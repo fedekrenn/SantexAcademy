@@ -1,166 +1,219 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/94c0117dd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Xacademy Clase 1 maquetacion</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-  <title>Xacademy Clase 1 maquetacion</title>
-</head>
-
-<body>
-  <header id="header">
-    <a href="https://technologywithpurpose.org/" target="_blank">
-      <img src="./assets/logo.svg" alt="Logo de Technology with Purpose">
-    </a>
-    <nav>
-      <ul id="header-right">
-        <li>Nosotros</li>
-        <li>Programas</li>
-        <li>Capacitaciones</li>
-        <li>Alianzas</li>
-        <li>Contacto</li>
-        <li><a href="#" class="btn">Sumate +</a></li>
-        <li>
-          <ul class="icons-container">
-            <li>
-              <a href="https://www.instagram.com/technologywithpurpose/" target="_blank">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAl5JREFUSEuNlYFx2kAQRd924A5MKjCpAFJB7A6gA3dgXEGGCiAVQCoIqQBSgekgpILN/LuVdDohgmY0aO64/bv/798z4jHA9d1+NDv3/uaD5XF9603Pf+Pe+MPVLQPzFHe4fT9YnW/ioPe0FVR1TIA3YBrvSJUJ4GRwclgDpysAg3wXBptg8xdwaQ5eqUwJPACzyGCJsy1BcgXBl2NT8COgwM8KPkZgJakq3gNPwOeyklpkoSuwDlw6eUZVecDY4SmhLcaHOd8dW0RPDrroDOidXxH/2eApZBTXP5I+xjEA5hgHcx4dPhXd2ctO1K9xXgsexfFPjKnarvDKAXhRtQZnz1ppbQZm6tFo09IEafXdnFUTyDx1iChbBM/CVjVbhyPGlxbV/IAHQF7sfBB1aPUdWEUF0mMXme4rty/ANuCqQgIr2jWAno0LgBRuZfCWDDnUWdT96RJKrSgNZi6Kugp6FksARlCUK5Hh+obMYEMAvNPgFsCQInsBzzR0T0uRwT40G6GoO1RroB215CPGAk+tqXr0/Q34jTEvuisAOkrrWaRGXBu8Fu0oKlT6UyVDdrtxCTYEHRT1/VWMimSyMFo1/nJrTgP4hLed0+iZAAwmjk2SCfK47j0aFV/JTrxnVBSHbQL+YWhUJM+k4DWApqOG3QFsifk5JzI2i9p1GXEnt+Mjw67fHWwa45hz8XrOd46bx0iYx4xahsPbcGMXjirRPJobaXiVI725vZsgf6PiFebSpifeGEAlze1L+9al2144NXKDUF0sFXB7Uw0TKgoJurtuG17lNwJVW3U1/wAZ+P0dcT0ikQAAAABJRU5ErkJggg=="
-                  alt="Instagram icon">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/technologywithpurpose/" target="_blank">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgZJREFUSEuNlnFZAzEMxX9RwCEBBYCCDQdIwAFIAAdDARL45mBzMBzMAUNB+Nrm2jTrDfrXXa/Ny8t7aU/ohgDaT+U3AVH75Nf8/ZxW5P0lbnkIrwXQYwxS6Ne0xekpZj0ZzKllXTFqHpWQBxsQqgxswwZ4NoA30NdhsjVBz3hc3gJQKjApfLtSnIDrc4AlPXwZuxLVEBMJoB8JIAFdHEE5L2oWwIu8AZ1L9A764hUe1r0L19skBa8lcimayCXzmt2STUWjFwYMWvQ1gpZY8gN6sE93CFdmoXl+ArkFXQMHkC9Ej5FlYGChi3H3QNqcxg5Y2XOafxX4VJhCfyTXvTnjRA1KlxnM3rJLlHeIrqzJjwiTaHadG3XjQ15vi6MGbo84AHYIM4DzRbBs0WOr8OhZ+CzmAyfN7RHWlkgukWulLTlInnkCPtxZcgRu/gfgNfAMhHtRDjNdgZPCldPDN3BXx54BrM2mqaaNgSSvdQ1UTWDrpdegcXdHaSiRsHIW7LQT2GlzWTKFzM0xFNnwnE07F6VyG4Pa5wWgJZrjtk5uF4Bvy74PehdJODt9nxQGizZtO52Lsq+t0fKCyDwAtCPoQh/4Tl4CqNkUgNak5wxMfeci2SNqfRA0CIdkFbmV2oscLtvxxbRwH5wvjndDuA/OfwCWbhof+lJOo/sgHmHhR2Yp63Eqvwwj9xyKEPm5AAAAAElFTkSuQmCC"
-                  alt="Linkedin icon">
+  <body>
+    <header id="header">
+      <a href="https://technologywithpurpose.org/" target="_blank">
+        <img src="./assets/logo.svg" alt="Logo de Technology with Purpose" />
+      </a>
+      <nav>
+        <ul id="header-right">
+          <li>Nosotros</li>
+          <li><a href="#programs">Programas</a></li>
+          <li><a href="#training">Capacitaciones</a></li>
+          <li>Alianzas</li>
+          <li>Contacto</li>
+          <li><a href="#" class="btn">Sumate +</a></li>
+          <li>
+            <ul class="icons-container">
+              <li>
+                <a
+                  href="https://www.instagram.com/technologywithpurpose/"
+                  target="_blank"
                 >
-
-              </a>
-            </li>
-          </ul>
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/technologywithpurpose/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="presentation">
+        <h1>
+          Somos una Fundación dedicada a mejorar la calidad de vida de las
+          personas y su entorno, a través de la tecnología.
+        </h1>
+        <div id="introduction-actions">
+          <a class="btn">Contactanos -></a>
+          <a class="btn violet">Sumate +</a>
+        </div>
+      </section>
+      <section class="impact">
+        <div class="impact__container">
+          <div>
+            <h2>. Impacto</h2>
+            <p>
+              Buscamos construir alianzas y fortalecer vínculos para generar una
+              transformación real en la comunidad. Trabajamos para acercar la
+              tecnología innovadora y disruptiva del sector privado hacia el
+              sector social.
+            </p>
+          </div>
+          <div class="impact__numbers">
+            <div>
+              <span>58</span>
+              <p>Localidades</p>
+            </div>
+            <div>
+              <span><span class="purple-text">+</span>50</span>
+              <p>Mentores</p>
+            </div>
+            <div>
+              <span>301</span>
+              <p>Participantes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="impact__image"></div>
+      <section class="programs-training" id="programs">
+        <h2>. Programas</h2>
+        <div class="programs container">
+          <div class="programs-training__img">
+            <img
+              class="rounded-left"
+              src="./assets/team.jpg"
+              alt="Equipo de XAcademy"
+            />
+          </div>
+          <div class="programs-training__text">
+            <img
+              class="xAcademy-logo"
+              src="./assets/xacademy-logo.svg"
+              alt="Logo de XAcademy"
+            />
+            <p>
+              xAcademy es un programa de formación en tecnología llevado
+              adelante por la Fundación Tecnología con Propósito junto a Santex
+              que busca promover un cambio positivo en la comunidad a través de
+              la educación en IT, apuntando a lograr la inserción laboral de
+              personas en el mundo tecnológico.
+            </p>
+            <a href="#" class="btn">Más info -></a>
+          </div>
+          <div class="programs-training__img2">
+            <img
+              class="rounded-right"
+              src="./assets/robotica-educativa.jpg"
+              alt="Robótica educativa: la tecnología del futuro"
+            />
+          </div>
+          <div class="programs-training__text2">
+            <h3>Robótica educativa: la tecnología del futuro</h3>
+            <p>
+              Durante el curso, los alumnos y alumnas a través de la robótica
+              desarrollan la curiosidad, el autodidactismo y las habilidades
+              blandas necesarias para afrontar la revolución tecnológica del
+              siglo XXI.
+            </p>
+            <a href="#" class="btn">Más info -></a>
+          </div>
+        </div>
+        <h2 id="training">. Capacitaciones</h2>
+        <div class="training container">
+          <div class="programs-training__img">
+            <img
+              class="rounded-left"
+              src="./assets/estafas-virtuales.jpg"
+              alt="Estafas virtuales: ¿cómo protegernos?"
+            />
+          </div>
+          <div class="programs-training__text">
+            <h3>Estafas virtuales: ¿cómo protegernos?</h3>
+            <p>
+              Los canales de comunicación a través de medios digitales cobraron
+              gran protagonismo a partir de la pandemia. Al mismo tiempo, se
+              perfeccionan cada vez más rápido las modalidades de estafas y
+              fraudes virtuales. En esta capacitación vas a aprender diferentes
+              tips y consejos útiles para navegar de manera más segura.
+            </p>
+            <a href="#" class="btn">Más info -></a>
+          </div>
+          <div class="programs-training__img2">
+            <img
+              class="rounded-right"
+              src="./assets/seguridad-informatica-para-infancias.jpg"
+              alt="Seguridad informática para infancias"
+            />
+          </div>
+          <div class="programs-training__text2">
+            <h3>Seguridad informática para infancias</h3>
+            <p>
+              ¿Navegamos seguros en internet? La propuesta es una charla para
+              niños y niñas donde se brindan herramientas de seguridad y
+              autocuidado digital.
+            </p>
+            <a href="#" class="btn">Más info -></a>
+          </div>
+        </div>
+      </section>
+      <section class="team-members">
+        <!-- TODO -->
+      </section>
+      <section class="alliances">
+        <!-- TODO -->
+      </section>
+    </main>
+    <footer>
+      <img src="./assets/footer-logo.svg" alt="Logo en blanco de XAcademy" />
+      <p>
+        Trabajamos para acercar la tecnología innovadora y disruptiva del sector
+        privado hacia el sector social.
+      </p>
+      <ul>
+        <li>NOSOTROS</li>
+        <li>CONTACTO</li>
+      </ul>
+      <ul>
+        <li><a href="#programs">PROGRAMAS</a></li>
+        <li><a href="#training">CAPACITACIONES</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a
+            href="https://www.instagram.com/technologywithpurpose/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i> INSTAGRAM
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/technologywithpurpose/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i> LINKEDIN
+          </a>
         </li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="presentation">
-      <h1>
-        Somos una Fundación dedicada a mejorar la calidad de vida de las
-        personas y su entorno, a través de la tecnología.
-      </h1>
-      <div id="introduction-actions">
-        <a class="btn">Contactanos -></a>
-        <a class="btn violet">Sumate +</a>
-      </div>
-    </section>
-    <section class="impact">
-      <div class="impact__container">
-        <div>
-          <h2>. Impacto</h2>
-          <p>
-            Buscamos construir alianzas y fortalecer vínculos para generar una
-            transformación real en la comunidad. Trabajamos para acercar la
-            tecnología innovadora y disruptiva del sector privado hacia el
-            sector social.
-          </p>
-        </div>
-        <div class="impact__numbers">
-          <div>
-            <span>58</span>
-            <p>Localidades</p>
-          </div>
-          <div>
-            <span><span class="purple-text">+</span>50</span>
-            <p>Mentores</p>
-          </div>
-          <div>
-            <span>301</span>
-            <p>Participantes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="impact__image"></div>
-    <section class="programs-training">
-      <h2>. Programas</h2>
-      <div class="programs container">
-        <div class="programs-training__img">
-          <img class="rounded-left" src="./assets/team.jpg" alt="Equipo de XAcademy">
-        </div>
-        <div class="programs-training__text">
-          <img class="xAcademy-logo" src="./assets/xacademy-logo.svg" alt="Logo de XAcademy">
-          <p>
-            xAcademy es un programa de formación en tecnología llevado
-            adelante por la Fundación Tecnología con Propósito junto a Santex
-            que busca promover un cambio positivo en la comunidad a través de
-            la educación en IT, apuntando a lograr la inserción laboral de
-            personas en el mundo tecnológico.
-          </p>
-          <a href="#" class="btn">Más info -></a>
-        </div>
-        <div class="programs-training__img2">
-          <img class="rounded-right" src="./assets/robotica-educativa.jpg"
-            alt="Robótica educativa: la tecnología del futuro">
-        </div>
-        <div class="programs-training__text2">
-          <h3>Robótica educativa: la tecnología del futuro</h3>
-          <p>
-            Durante el curso, los alumnos y alumnas a través de la robótica
-            desarrollan la curiosidad, el autodidactismo y las habilidades
-            blandas necesarias para afrontar la revolución tecnológica del
-            siglo XXI.
-          </p>
-          <a href="#" class="btn">Más info -></a>
-        </div>
-      </div>
-      <h2>. Capacitaciones</h2>
-      <div class="training container">
-        <div class="programs-training__img">
-          <img class="rounded-left" src="./assets/estafas-virtuales.jpg" alt="Estafas virtuales: ¿cómo protegernos?">
-        </div>
-        <div class="programs-training__text">
-          <h3>Estafas virtuales: ¿cómo protegernos?</h3>
-          <p>
-            Los canales de comunicación a través de medios digitales cobraron
-            gran protagonismo a partir de la pandemia. Al mismo tiempo, se
-            perfeccionan cada vez más rápido las modalidades de estafas y
-            fraudes virtuales. En esta capacitación vas a aprender diferentes
-            tips y consejos útiles para navegar de manera más segura.
-          </p>
-          <a href="#" class="btn">Más info -></a>
-        </div>
-        <div class="programs-training__img2">
-          <img class="rounded-right" src="./assets/seguridad-informatica-para-infancias.jpg"
-            alt="Seguridad informática para infancias">
-        </div>
-        <div class="programs-training__text2">
-          <h3>Seguridad informática para infancias</h3>
-          <p>
-            ¿Navegamos seguros en internet? La propuesta es una charla para
-            niños y niñas donde se brindan herramientas de seguridad y
-            autocuidado digital.
-          </p>
-          <a href="#" class="btn">Más info -></a>
-        </div>
-      </div>
-    </section>
-    <section class="team-members">
-      <!-- TODO -->
-    </section>
-    <section class="alliances">
-      <!-- TODO -->
-    </section>
-  </main>
-  <footer>
-    <!-- TODO -->
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
