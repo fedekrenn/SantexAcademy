@@ -24,11 +24,18 @@ img {
 }
 
 h1 {
+  color: #201b24;
   text-align: center;
   width: 45%;
   font-size: 28px;
   font-weight: 600;
   line-height: 34px;
+}
+
+h2 {
+  color: #201b24;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 #header {
@@ -130,8 +137,6 @@ a.violet:hover {
 }
 
 .impact__container h2 {
-  font-size: 30px;
-  font-weight: 600;
   line-height: 36px;
 }
 
@@ -177,8 +182,6 @@ span.purple-text {
 }
 
 .programs-training h2 {
-  font-size: 30px;
-  font-weight: 600;
   line-height: 30px;
   margin: 60px 0 0 60px;
 }
@@ -254,6 +257,73 @@ span.purple-text {
   line-height: 21px;
 }
 
+.team-members {
+  background-color: #f4f4f5;
+  padding: 70px 0;
+}
+
+.team-members h2 {
+  margin: 0 0 30px 80px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.7em;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-item {
+  background-color: #fff;
+  height: 300px;
+  width: 220px;
+  border-radius: 15px 15px 15px 0;
+  overflow: hidden;
+}
+
+.card-item__info {
+  margin-top: 10px;
+  height: 100px;
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item img {
+  object-fit: cover;
+}
+
+.card-item h4 {
+  color: #201b24;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  margin: 0;
+}
+
+.card-item span {
+  display: block;
+  color: #8c939c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+}
+
+.card-item i {
+  font-size: 12px;
+  line-height: 21px;
+  height: 24.64px;
+  width: 24.64px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin: 7px 0 0 0;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -265,7 +335,7 @@ footer {
 }
 
 footer p {
-  flex: .3;
+  flex: 0.3;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
