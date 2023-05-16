@@ -17,6 +17,12 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #6B53F0;
 }
 
 img {
@@ -137,6 +143,7 @@ a.violet:hover {
 }
 
 .impact__container h2 {
+  color: #fff;
   line-height: 36px;
 }
 
@@ -175,7 +182,7 @@ span.purple-text {
 }
 
 .impact__image {
-  background-image: url("./assets/santex-team.jpg");
+  background-image: url("./assets/programs/santex-team.jpg");
   height: 90vh;
   background-size: cover;
   background-attachment: fixed;
@@ -322,6 +329,13 @@ span.purple-text {
   border: 2px solid #000;
   border-radius: 50%;
   margin: 7px 0 0 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-item i:hover {
+  background-color: #6B53F0;
+  color: #fff;
+  border: 2px solid #6B53F0;
 }
 
 .alliances{
@@ -376,10 +390,15 @@ footer ul {
 
 footer ul li {
   margin: 0;
+  color: #D9D9D9;
 }
 
 footer ul i {
   margin-right: 5px;
+}
+
+footer a:hover {
+  color: #fff;
 }
 
 @media (max-width: 1034px) {
