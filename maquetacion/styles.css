@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: inter, sans-serif;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #6B53F0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  color: #201b24;
+  text-align: center;
+  width: 45%;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+h2 {
+  color: #201b24;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#header {
+  position: fixed;
+  min-height: 80px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #fff;
+  border-bottom: 1px solid gray;
+  display: flex;
+  padding: 0 75px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+ul li img {
+  width: 17px;
+  height: 17px;
+}
+
+main {
+  padding-top: 80px;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#introduction-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+a.btn {
+  background-color: white;
+  border: 2px solid black;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 25px;
+  padding: 9px 20px;
+  line-height: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+a.btn:hover {
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}
+
+a.violet {
+  border-color: #6b53f0;
+  color: #6b53f0;
+}
+
+a.violet:hover {
+  background-color: #6b53f0;
+  color: #fff;
+}
+
+.presentation {
+  min-height: 50vh;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.impact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55vh;
+  background-color: #201b24;
+  color: #fff;
+}
+
+.impact__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.impact__container div {
+  width: 48%;
+}
+
+.impact__container h2 {
+  color: #fff;
+  line-height: 36px;
+}
+
+.impact__container p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.impact__numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.impact__numbers span {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.impact__numbers p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #8c939c;
+}
+
+span.purple-text {
+  color: #6b53f0;
+  font-size: 30px;
+  font-weight: 400;
+  vertical-align: top;
+}
+
+.impact__image {
+  background-image: url("./assets/programs/santex-team.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.programs-training h2 {
+  line-height: 30px;
+  margin: 60px 0 0 60px;
+}
+
+.training > div,
+.programs > div {
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "programs-training__img programs-training__text"
+    "programs-training__text2 programs-training__img2";
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 2em 4em;
+}
+
+.rounded-left {
+  border-radius: 0 40px 40px 40px;
+}
+
+.rounded-right {
+  border-radius: 40px 40px 0 40px;
+}
+
+.programs-training__img {
+  grid-area: programs-training__img;
+}
+
+.programs-training__text {
+  grid-area: programs-training__text;
+}
+
+.programs-training__img2 {
+  grid-area: programs-training__img2;
+}
+
+.programs-training__text2 {
+  grid-area: programs-training__text2;
+}
+
+.xAcademy-logo {
+  width: 200px;
+}
+
+.programs-training__text,
+.programs-training__text2 {
+  width: 80%;
+}
+
+.programs-training h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0;
+}
+
+.programs-training p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.team-members {
+  background-color: #f4f4f5;
+  padding: 70px 0;
+}
+
+.team-members h2 {
+  margin: 0 0 30px 80px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.7em;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-item {
+  background-color: #fff;
+  height: 300px;
+  width: 220px;
+  border-radius: 15px 15px 15px 0;
+  overflow: hidden;
+}
+
+.card-item__info {
+  margin-top: 10px;
+  height: 100px;
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item img {
+  object-fit: cover;
+}
+
+.card-item h4 {
+  color: #201b24;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  margin: 0;
+}
+
+.card-item span {
+  display: block;
+  color: #8c939c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+}
+
+.card-item i {
+  font-size: 12px;
+  line-height: 21px;
+  height: 24.64px;
+  width: 24.64px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin: 7px 0 0 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-item i:hover {
+  background-color: #6B53F0;
+  color: #fff;
+  border: 2px solid #6B53F0;
+}
+
+.alliances{
+  padding: 60px;
+}
+
+.alliances h2 {
+  margin: 0 0 30px 50px;
+}
+
+.logos-flex {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logos-flex img {
+  width: 20%;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.logos-flex img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #201b24;
+  color: #fff;
+  min-height: 175px;
+  padding-right: 4.5em;
+}
+
+footer p {
+  flex: 0.3;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+footer ul {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+footer ul li {
+  margin: 0;
+  color: #D9D9D9;
+}
+
+footer ul i {
+  margin-right: 5px;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+@media (max-width: 1034px) {
+  #header {
+    padding: 10px 20px;
+  }
+}
